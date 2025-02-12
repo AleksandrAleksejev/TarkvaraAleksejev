@@ -97,3 +97,6 @@ function opeaastani() {
 
     answerO.innerHTML = "Enne õppeaasta lõpuni " + difference4 + " päeva";
 }
+function showImage() {
+    document.getElementById("imageContainer").style.display = "block";
+}

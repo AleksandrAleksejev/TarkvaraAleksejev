@@ -7,60 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td id="td1">
-<h1>Kuupäeva kalkulaator</h1>
-<form>
-    <label for="dateA">Vali 1.kuupäev:</label>
-    <input type="date" id="dateA">
-    <br>
-    <label for="dateB">Vali 2.kuupäev:</label>
-    <input type="date" id="dateB">
-    <br>
-    <input type="button" value="OK" onclick="dateDiv()">
-    <div id="answerD">Loading.........</div>
-    <br>
-    </tr>
-    </td>
-<tr>
-            <td id="td2">
-<form name="millalOnSuvi">
-    <h1>Mitu paeva enne suve algust?</h1>
-    <label for="tana">Mis paev tana on?: </label>
-    <input type="date" id="tana">
-    <br>
-    <input type="button" value="OK" onclick="suveni()">
-    <div id="answerS">Loading...</div>
-    <br>
-     </tr>
-    </td>
+<table border="1">
     <tr>
-            <td id="td3">
-<form name="millalOnUusAasta">
-    <h1>Mitu päeva uue aastani?</h1>
-    <label for="tana1">Mis paeva tana on ?: </label>
-    <input type="date" id="tana1">
-    <br>
-    <input type="button" value="OK" onclick="uusaasta()">
-    <div id="answerB">Loading...</div>
-    <br>
-     </tr>
-    </td>
-        <tr>
-            <td id="td4">
-                <form name="millalOnÕppeaastaLõpuni">
-                    <h1>Mitu paeva enne õppeaasta lõpuni?</h1>
-                    <label for="tana2">Mis paev tana on?: </label>
-                    <input type="date" id="tana2">
-                    <br>
-                    <input type="button" value="OK" onclick="opeaastani()">
-                    <div id="answerO">Loading...</div>
-                    <br>
-        </tr>
+        <td id="td1">
+            <h1>---------Kuupäeva kalkulaator-------------</h1>
+            <form>
+                <label for="dateA">Vali 1. kuupäev:</label>
+                <input type="date" id="dateA">
+                <br>
+                <label for="dateB">Vali 2. kuupäev:</label>
+                <input type="date" id="dateB">
+                <br>
+                <input type="button" value="OK" onclick="dateDiv()">
+                <div id="answerD">Loading...</div>
+                <br>
+            </form>
         </td>
-
+    </tr>
+    <tr>
+        <td id="td2">
+            <h1>--------Mitu päeva enne suve algust?---------</h1>
+            <form name="millalOnSuvi">
+                <label for="tana">Mis päev täna on?: </label>
+                <input type="date" id="tana">
+                <br>
+                <input type="button" value="OK" onclick="suveni()">
+                <div id="answerS">Loading...</div>
+                <br>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td id="td3">
+            <h1>--------Mitu päeva uue aastani?----------</h1>
+            <form name="millalOnUusAasta">
+                <label for="tana1">Mis päev täna on?: </label>
+                <input type="date" id="tana1">
+                <br>
+                <input type="button" value="OK" onclick="uusaasta()">
+                <div id="answerB">Loading...</div>
+                <br>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td id="td4">
+            <h1>--------Mitu päeva enne õppeaasta lõppu?---------</h1>
+            <form name="millalOnÕppeaastaLõpuni">
+                <label for="tana2">Mis päev täna on?: </label>
+                <input type="date" id="tana2">
+                <br>
+                <input type="button" value="OK" onclick="opeaastani()">
+                <div id="answerO">Loading...</div>
+                <br>
+            </form>
+        </td>
+    </tr>
 </table>
 
+<!-- Foto nupp ja pilt -->
+<button onclick="showImage()">Näita pilti</button>
+<div id="imageContainer" style="display: none; text-align: center; margin-top: 20px;">
+    <img src="https://i.redd.it/ket76730w05a1.jpg" alt="Pilt" style="max-width: 100%; height: auto;">
+</div>
 </body>
 </html>
