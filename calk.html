@@ -12,6 +12,7 @@
         <li><button onclick="showCalculator('dateCalc')">Kuupäeva kalkulaator</button></li>
         <li><button onclick="showCalculator('summerCalc')">Suve alguse kalkulaator</button></li>
         <li><button onclick="showCalculator('newYearCalc')">Uue aasta kalkulaator</button></li>
+        <li><button onclick="showCalculator('schoolYearCalc')">Õppeaasta lõpuni kalkulaator</button></li>
     </ul>
 </nav>
 
@@ -46,7 +47,14 @@
 </div>
 </body>
 
-
+<div id="schoolYearCalc" class="calculator">
+    <h1>Mitu päeva õppeaasta lõpuni?</h1>
+    <label for="todaySchool">Mis päev täna on?:</label>
+    <input type="date" id="todaySchool">
+    <br>
+    <input type="button" value="OK" onclick="oppeaastaLopp()">
+    <div id="answerSchool">Loading...</div>
+</div>
 
 
 </html>
