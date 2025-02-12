@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuupäeva Kalkulaator</title>
+    <script src="calkscr.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td id="td1">
+<h1>---------Kuupäeva kalkulaator-------------</h1>
+<form>
+    <label for="dateA">Vali 1.kuupäev:</label>
+    <input type="date" id="dateA">
+    <br>
+    <label for="dateB">Vali 2.kuupäev:</label>
+    <input type="date" id="dateB">
+    <br>
+    <input type="button" value="OK" onclick="dateDiv()">
+    <div id="answerD">Loading.........</div>
+    <br>
+    </tr>
+    </td>
+    
+</form>
+<tr>
+            <td id="td2">
+<form name="millalOnSuvi">
+    <h1>--------Mitu paeva enne suve algust?---------</h1>
+    <label for="tana">Mis paev tana on?: </label>
+    <input type="date" id="tana">
+    <br>
+    <input type="button" value="OK" onclick="suveni()">
+    <div id="answerS">Loading...</div>
+    <br>
+     </tr>
+    </td>
+    <tr>
+            <td id="td3">
+<form name="millalOnUusAasta">
+    <h1>--------Mitu päeva uue aastani----------?</h1>
+    <label for="tana1">Mis paeva tana on ?: </label>
+    <input type="date" id="tana1">
+    <br>
+    <input type="button" value="OK" onclick="uusaasta()">
+    <div id="answerB">Loading...</div>
+    <br>
+     </tr>
+    </td>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
