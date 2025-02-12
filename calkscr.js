@@ -84,3 +84,15 @@ function suveni()
 
     answerS.innerHTML="Kuni uusaasta jäi "+difference3+" päeva";
 }
+
+function oppeaastaLopp() {
+    var today = new Date(document.getElementById("todaySchool").value);
+    var endOfSchool = new Date(today.getFullYear(), 5, 15);
+
+    if (today > endOfSchool) {
+        endOfSchool = new Date(today.getFullYear() + 1, 5, 15);
+    }
+
+    var diffTime = Math.ceil((endOfSchool - today) / (1000 * 60 * 60 * 24));
+    document.getElementById("answerSchool").innerHTML = "Õppeaasta lõpuni on jäänud " + diffTime + " päeva";
+}
