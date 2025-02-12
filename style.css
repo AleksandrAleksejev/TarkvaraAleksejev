@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    margin-bottom: 20px;
+    align-content: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+li {
+    display: inline;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+.calculator {
+    display: none;
+}
+.active {
+    display: block;
+}

@@ -1,3 +1,14 @@
+function showCalculator(id) {
+    var calculators = document.querySelectorAll('.calculator');
+    for (var i = 0; i < calculators.length; i++) {
+        calculators[i].classList.remove('active');
+    }
+    var selectedCalculator = document.getElementById(id);
+    if (selectedCalculator) {
+        selectedCalculator.classList.add('active');
+    }
+}
+
 function  dateDiv()
 {
     const _MS_PER_DAY = 1000 * 60 * 60 * 24;
