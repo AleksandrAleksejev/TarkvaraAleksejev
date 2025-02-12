@@ -73,3 +73,27 @@ function suveni()
 
     answerS.innerHTML="Kuni uusaasta jäi "+difference3+" päeva";
 }
+function opeaastani() {
+    const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+// a and b are javascript Date objects
+    function dateDiffInDays4(tana2) {
+        // Discard the time and time-zone information.
+        const utc1 = Date.UTC(tana2.getFullYear(), tana2.getMonth(), tana2.getDate());
+        const utc3 = Date.UTC(tana2.getFullYear(), 5, 7);
+        var utc2;
+        if (((utc3 - utc1) / _MS_PER_DAY) < 0) {
+            utc2 = Date.UTC(tana2.getFullYear() + 1, 5, 7);
+        } else {
+            utc2 = Date.UTC(tana2.getFullYear(), 5, 7);
+        }
+
+        return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+    }
+
+    var tana2 = new Date(document.getElementById("tana2").value);
+    var difference4 = dateDiffInDays4(tana2);
+    var answerO = document.getElementById("answerO");
+
+    answerO.innerHTML = "Enne õppeaasta lõpuni " + difference4 + " päeva";
+}
