@@ -96,3 +96,17 @@ function oppeaastaLopp() {
     var diffTime = Math.ceil((endOfSchool - today) / (1000 * 60 * 60 * 24));
     document.getElementById("answerSchool").innerHTML = "Õppeaasta lõpuni on jäänud " + diffTime + " päeva";
 }
+
+function displayPhoto() {
+    var input = document.getElementById("photoInput");
+    var container = document.getElementById("photoContainer");
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            container.innerHTML = '<img src="' + e.target.result + '">';
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+

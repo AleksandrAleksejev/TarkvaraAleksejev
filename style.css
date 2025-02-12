@@ -8,7 +8,7 @@ body {
 
 nav {
     margin-bottom: 20px;
-    background: black;
+    background: white;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -31,12 +31,12 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     border: none;
-    background-color: white;
+    background-color: grey;
     color: black;
     border-radius: 5px;
     font-size: 16px;
     transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    border: 1px solid #007bff;
+    border: 1px solid black;
 }
 
 button:hover {
@@ -47,7 +47,7 @@ button:hover {
 
 .calculator {
     display: none;
-    background: white;
+    background: lightgray;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -65,5 +65,13 @@ div {
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
-    background: white;
+    background: darkgrey;
+}
+
+#photoContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
 }
